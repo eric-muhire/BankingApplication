@@ -1,17 +1,25 @@
+package com.bankingApplication;
 public class BankAccount {
 
     private int balance;
     private int previousTransaction;
     private String customerName;
-   private  String custotmerId;
+    private String custotmerId;
 
 
-    public BankAccount(String customerName, String custotmerId) {
+
+
+    public BankAccount(String customerName, int customerId) {
         this.customerName = customerName;
         this.custotmerId = custotmerId;
+
     }
 
-        public int getBalance() {
+    public BankAccount() {
+
+    }
+
+    public int getBalance() {
         return balance;
     }
 
@@ -41,11 +49,9 @@ public class BankAccount {
 
     public void setCustotmerId(String custotmerId) {
         this.custotmerId = custotmerId;
+    }
 
-
-     }
-
-     public void deposit(int amount){
+    public void deposit(int amount){
          if (amount!=0){
              balance =balance +amount;
              previousTransaction=amount;
