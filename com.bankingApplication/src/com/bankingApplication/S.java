@@ -1,3 +1,4 @@
+package com.bankingApplication;
 public class S {
 
     //method s for System.out.println();

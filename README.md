@@ -1,1 +1,1 @@
-# BankingApplication
+# com.bankingApplication.BankingApplication
